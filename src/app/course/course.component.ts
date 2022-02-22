@@ -11,6 +11,16 @@ export class CourseComponent implements OnInit {
   name = "Angular";
   duration = 8;
 
+  courses = [
+    'HTML-CSS',
+    'JavaScript',
+    'TypeScript',
+    'Angular',
+    'React'
+  ]
+
+  //Logic for calling the
+
   constructor() { }
 
   ngOnInit(): void {
