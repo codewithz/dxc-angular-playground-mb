@@ -29,4 +29,10 @@ export class EventBindingComponent implements OnInit {
 
   }
 
+  onKeyUpEvent2(email: string) {
+    console.log(email)
+  }
+
 }
+
+
