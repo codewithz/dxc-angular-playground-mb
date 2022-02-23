@@ -1,0 +1,9 @@
+<div style="margin: 20px">
+  <h4>
+    <p>Course Name:{{ course.title | uppercase }}</p>
+    <p>Rating: {{ course.rating | number: "1.1-2" }}</p>
+    <p>Students: {{ course.students | number }}</p>
+    <p>Price: {{ course.price | currency: "INR" }}</p>
+    <p>Release Date: {{ course.releaseDate | date }}</p>
+  </h4>
+</div>
