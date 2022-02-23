@@ -13,7 +13,15 @@ export class EventBindingComponent implements OnInit {
   }
 
   onSave(event: Event) {
+    event.stopPropagation();
     console.log('Save Button Clicked', event)
+  }
+
+  onDivClicked() {
+    console.log("Outer Div Clicked")
+  }
+  onInternalDivClicked() {
+    console.log('Internal Div Clicked')
   }
 
 }

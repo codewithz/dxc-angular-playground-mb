@@ -1,4 +1,16 @@
-<div style="margin-left: 20px">
-  <h4>Event Binding Example</h4>
-  <button class="btn btn-info" (click)="onSave($event)">Save</button>
+<div
+  style="margin-left: 20px; width: 200px; height: 200px; background-color: #eee"
+  (click)="onDivClicked()"
+>
+  <div
+    (click)="onInternalDivClicked()"
+    style="
+      margin-left: 20px;
+
+      background-color: greenyellow;
+    "
+  >
+    <h4>Event Binding Example</h4>
+    <button class="btn btn-info" (click)="onSave($event)">Save</button>
+  </div>
 </div>
