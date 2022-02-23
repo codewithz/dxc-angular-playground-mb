@@ -12,8 +12,8 @@ export class EventBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSave() {
-    console.log('Save Button Clicked')
+  onSave(event: Event) {
+    console.log('Save Button Clicked', event)
   }
 
 }
