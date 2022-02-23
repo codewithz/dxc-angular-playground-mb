@@ -21,6 +21,11 @@
   </div>
 </div>
 
-<div>
+<div style="margin-bottom: 30px; margin-left: 20px">
   <input type="text" (keyup.enter)="onKeyUp()" />
+</div>
+
+<div style="margin-bottom: 30px; margin-left: 20px">
+  <label for="">Email : </label>
+  <input type="text" #email (keyup.enter)="onKeyUpEvent2(email.value)" />
 </div>
