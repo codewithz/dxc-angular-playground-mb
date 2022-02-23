@@ -24,4 +24,9 @@ export class EventBindingComponent implements OnInit {
     console.log('Internal Div Clicked')
   }
 
+  onKeyUp() {
+    console.log("Enter Button is clicked")
+
+  }
+
 }

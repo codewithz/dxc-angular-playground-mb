@@ -1,5 +1,11 @@
 <div
-  style="margin-left: 20px; width: 200px; height: 200px; background-color: #eee"
+  style="
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+  "
   (click)="onDivClicked()"
 >
   <div
@@ -13,4 +19,8 @@
     <h4>Event Binding Example</h4>
     <button class="btn btn-info" (click)="onSave($event)">Save</button>
   </div>
+</div>
+
+<div>
+  <input type="text" (keyup.enter)="onKeyUp()" />
 </div>
