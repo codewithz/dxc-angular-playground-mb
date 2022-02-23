@@ -9,6 +9,7 @@ export class PropertyBindingComponent implements OnInit {
 
   title = "Property Binding";
   imageURL = 'http://codewithz.com/images/what-is-mongodb/01.png';
+  colSpan = 2;
 
   constructor() { }
 
