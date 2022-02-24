@@ -14,6 +14,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { PipesComponent } from './pipes/pipes.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TweetComponent } from './tweet/tweet.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TweetComponent } from './tweet/tweet.component';
     TwoWayBindingComponent,
     PipesComponent,
     FavoriteComponent,
-    TweetComponent
+    TweetComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
