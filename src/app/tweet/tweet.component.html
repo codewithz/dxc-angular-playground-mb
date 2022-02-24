@@ -5,7 +5,7 @@
     <label>{{ tweet.likes }}</label>
     <favorite
       [isSelected]="tweet.isLiked"
-      (change)="onTweetLikedStatusChanged()"
+      (change)="onTweetLikedStatusChanged($event)"
     ></favorite>
   </div>
 </div>
