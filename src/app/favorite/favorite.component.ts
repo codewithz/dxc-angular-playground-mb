@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoriteComponent implements OnInit {
 
+  isSelected: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.isSelected = !this.isSelected;
   }
 
 }

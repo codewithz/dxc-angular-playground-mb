@@ -1,1 +1,8 @@
-<span class="bi bi-star-fill"></span>
+<div style="margin-left: 30px">
+  <span
+    class="bi"
+    [class.bi-star-fill]="isSelected"
+    [class.bi-star]="!isSelected"
+    (click)="onClick()"
+  ></span>
+</div>
