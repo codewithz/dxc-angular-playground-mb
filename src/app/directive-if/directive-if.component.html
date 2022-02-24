@@ -1,9 +1,7 @@
 <h4>ng-if Demo</h4>
 
-<div *ngIf="players.length > 0">
-    List of Players
-</div>
+<div *ngIf="players.length > 0; then playersList; else noPlayers"></div>
 
-<div *ngIf="players.length == 0">
-    No player added to the list yet
-</div>
+<ng-template #playersList> List of Players </ng-template>
+
+<ng-template #noPlayers> No player added to the list yet </ng-template>
