@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-favorite',
+  selector: 'favorite',
   templateUrl: './favorite.component.html',
   styleUrls: ['./favorite.component.css']
 })
 export class FavoriteComponent implements OnInit {
 
-  isSelected: boolean = false;
+  @Input() isSelected: boolean = true;
 
   constructor() { }
 

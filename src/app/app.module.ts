@@ -13,6 +13,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     EventBindingComponent,
     TwoWayBindingComponent,
     PipesComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule,

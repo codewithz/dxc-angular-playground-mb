@@ -1,0 +1,8 @@
+<div style="border: 3px solid grey">
+  <p>{{ tweet.body }}</p>
+  <br />
+  <div>
+    <label>{{ tweet.likes }}</label>
+    <favorite [isSelected]="tweet.isLiked"></favorite>
+  </div>
+</div>
