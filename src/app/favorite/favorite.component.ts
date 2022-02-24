@@ -6,6 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   templateUrl: './favorite.component.html',
   styleUrls: ['./favorite.component.css'],
 
+
 })
 export class FavoriteComponent implements OnInit {
 
