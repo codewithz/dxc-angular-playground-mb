@@ -3,6 +3,9 @@
   <br />
   <div>
     <label>{{ tweet.likes }}</label>
-    <favorite [isSelected]="tweet.isLiked" ></favorite>
+    <favorite
+      [isSelected]="tweet.isLiked"
+      (change)="onTweetLikedStatusChanged()"
+    ></favorite>
   </div>
 </div>

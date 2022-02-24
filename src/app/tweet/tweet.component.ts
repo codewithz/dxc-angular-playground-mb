@@ -13,5 +13,9 @@ export class TweetComponent {
     isLiked: false
   }
 
+  onTweetLikedStatusChanged() {
+    console.log('Tweet Like Status has been changed')
+  }
+
 
 }
