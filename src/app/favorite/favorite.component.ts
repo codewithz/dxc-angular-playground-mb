@@ -21,7 +21,10 @@ export class FavoriteComponent implements OnInit {
 
   onClick() {
     this.isFavorite = !this.isFavorite;
-    this.change.emit(this.isFavorite);
+    let someObject = {
+      color: 'red'
+    }
+    this.change.emit(someObject);
 
   }
 
