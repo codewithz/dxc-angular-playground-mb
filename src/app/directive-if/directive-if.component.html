@@ -5,3 +5,10 @@
 <ng-template #playersList> List of Players </ng-template>
 
 <ng-template #noPlayers> No player added to the list yet </ng-template>
+
+<br />
+<br />
+<hr />
+
+<div [hidden]="courses.length === 0">List of Courses</div>
+<div [hidden]="courses.length > 0">No Course the List</div>

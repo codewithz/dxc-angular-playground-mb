@@ -12,7 +12,9 @@ export class DirectiveIfComponent {
     'Virat Kohli',
     'Jasprit Bumrah',
     'Rishabh Pant'
-  ]
+  ];
+
+  courses = [];
 
 
 }
