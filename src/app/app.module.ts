@@ -15,6 +15,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { PanelComponent } from './panel/panel.component';
+import { DirectiveIfComponent } from './directive-if/directive-if.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PanelComponent } from './panel/panel.component';
     PipesComponent,
     FavoriteComponent,
     TweetComponent,
-    PanelComponent
+    PanelComponent,
+    DirectiveIfComponent
   ],
   imports: [
     BrowserModule,
