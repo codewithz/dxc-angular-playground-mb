@@ -19,6 +19,7 @@ import { DirectiveIfComponent } from './directive-if/directive-if.component';
 import { DirectiveSwithcComponent } from './directive-swithc/directive-swithc.component';
 import { DirectiveForComponent } from './directive-for/directive-for.component';
 import { DirectiveForChangeComponent } from './directive-for-change/directive-for-change.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { DirectiveForChangeComponent } from './directive-for-change/directive-fo
     DirectiveIfComponent,
     DirectiveSwithcComponent,
     DirectiveForComponent,
-    DirectiveForChangeComponent
+    DirectiveForChangeComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
