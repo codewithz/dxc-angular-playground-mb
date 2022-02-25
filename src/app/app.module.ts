@@ -17,6 +17,7 @@ import { TweetComponent } from './tweet/tweet.component';
 import { PanelComponent } from './panel/panel.component';
 import { DirectiveIfComponent } from './directive-if/directive-if.component';
 import { DirectiveSwithcComponent } from './directive-swithc/directive-swithc.component';
+import { DirectiveForComponent } from './directive-for/directive-for.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DirectiveSwithcComponent } from './directive-swithc/directive-swithc.co
     TweetComponent,
     PanelComponent,
     DirectiveIfComponent,
-    DirectiveSwithcComponent
+    DirectiveSwithcComponent,
+    DirectiveForComponent
   ],
   imports: [
     BrowserModule,

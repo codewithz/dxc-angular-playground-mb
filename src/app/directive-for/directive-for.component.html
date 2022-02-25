@@ -1,0 +1,13 @@
+<div>
+  <h4>ngFor Demo</h4>
+
+  <ul>
+    <li *ngFor="let movie of movies; index as i">{{ i }}- {{ movie.name }}</li>
+  </ul>
+  <hr />
+  <ul>
+    <li *ngFor="let movie of movies; even as isEven; count as totalCount">
+      {{ movie.name }} of {{ totalCount }} <span *ngIf="isEven">(EVEN)</span>
+    </li>
+  </ul>
+</div>
