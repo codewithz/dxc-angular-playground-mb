@@ -16,6 +16,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { PanelComponent } from './panel/panel.component';
 import { DirectiveIfComponent } from './directive-if/directive-if.component';
+import { DirectiveSwithcComponent } from './directive-swithc/directive-swithc.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DirectiveIfComponent } from './directive-if/directive-if.component';
     FavoriteComponent,
     TweetComponent,
     PanelComponent,
-    DirectiveIfComponent
+    DirectiveIfComponent,
+    DirectiveSwithcComponent
   ],
   imports: [
     BrowserModule,
