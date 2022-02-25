@@ -7,8 +7,19 @@
 <div style="margin-left: 30px; border: 2px solid royalblue">
   <span
     class="bi"
-    [class.bi-star-fill]="isFavorite"
-    [class.bi-star]="!isFavorite"
+    [ngClass]="{
+      'bi-star-fill': isFavorite,
+      'bi-star': !isFavorite
+    }"
     (click)="onClick()"
   ></span>
 </div>
+<!-- <div style="margin-left: 30px; border: 2px solid royalblue">
+  <span
+    class="bi"
+    [class.bi-star-fill]="isFavorite"
+    [class.bi-star]="!isFavorite"
+    
+    (click)="onClick()"
+  ></span>
+</div> -->
