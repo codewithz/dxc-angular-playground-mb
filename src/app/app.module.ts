@@ -18,6 +18,7 @@ import { PanelComponent } from './panel/panel.component';
 import { DirectiveIfComponent } from './directive-if/directive-if.component';
 import { DirectiveSwithcComponent } from './directive-swithc/directive-swithc.component';
 import { DirectiveForComponent } from './directive-for/directive-for.component';
+import { DirectiveForChangeComponent } from './directive-for-change/directive-for-change.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DirectiveForComponent } from './directive-for/directive-for.component';
     PanelComponent,
     DirectiveIfComponent,
     DirectiveSwithcComponent,
-    DirectiveForComponent
+    DirectiveForComponent,
+    DirectiveForChangeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<div>
+  <h4>ngFor Change</h4>
+  <br />
+  <button class="btn btn-warning" (click)="loadCourses()">Load</button>
+  <br /><br />
+  <button class="btn btn-info" (click)="onAdd()">Add</button>
+  <br /><br />
+  <ul>
+    <li
+      style="margin-bottom: 20px"
+      *ngFor="let course of courses; 
+      trackBy: trackCourse"
+    >
+      {{ course.name }}
+      &nbsp;
+      <button class="btn btn-danger" (click)="onRemove(course)">Delete</button>
+      &nbsp;
+      <button class="btn btn-primary" (click)="onUpdate(course)">Update</button>
+    </li>
+  </ul>
+</div>
