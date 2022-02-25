@@ -20,6 +20,9 @@ import { DirectiveSwithcComponent } from './directive-swithc/directive-swithc.co
 import { DirectiveForComponent } from './directive-for/directive-for.component';
 import { DirectiveForChangeComponent } from './directive-for-change/directive-for-change.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { SafeTraversalComponent } from './safe-traversal/safe-traversal.component';
+import { InputFormatDirective } from './input-format.directive';
+import { InputComponentComponent } from './input-component/input-component.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     DirectiveSwithcComponent,
     DirectiveForComponent,
     DirectiveForChangeComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    SafeTraversalComponent,
+    InputFormatDirective,
+    InputComponentComponent
   ],
   imports: [
     BrowserModule,
