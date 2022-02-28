@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { MyComponent } from './mycomponent.component';
 import { CourseComponent } from './course/course.component';
@@ -24,6 +25,7 @@ import { SafeTraversalComponent } from './safe-traversal/safe-traversal.componen
 import { InputFormatDirective } from './input-format.directive';
 import { InputComponentComponent } from './input-component/input-component.component';
 import { StudentComponent } from './student/student.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -46,12 +48,14 @@ import { StudentComponent } from './student/student.component';
     SafeTraversalComponent,
     InputFormatDirective,
     InputComponentComponent,
-    StudentComponent
+    StudentComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]
