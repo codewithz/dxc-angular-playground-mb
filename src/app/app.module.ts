@@ -23,6 +23,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { SafeTraversalComponent } from './safe-traversal/safe-traversal.component';
 import { InputFormatDirective } from './input-format.directive';
 import { InputComponentComponent } from './input-component/input-component.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { InputComponentComponent } from './input-component/input-component.compo
     NgStyleComponent,
     SafeTraversalComponent,
     InputFormatDirective,
-    InputComponentComponent
+    InputComponentComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
