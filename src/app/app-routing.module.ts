@@ -12,11 +12,11 @@ const routes: Routes = [
     component: HomeComponentComponent
   },
   {
-    path: '/followers',
+    path: 'followers',
     component: GithubFollowersComponent
   },
   {
-    path: '/posts',
+    path: 'posts',
     component: PostsComponent
   },
   {
