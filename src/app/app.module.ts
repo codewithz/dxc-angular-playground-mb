@@ -27,6 +27,7 @@ import { InputComponentComponent } from './input-component/input-component.compo
 import { StudentComponent } from './student/student.component';
 import { PostsComponent } from './posts/posts.component';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
+import { ObservablePipeComponent } from './observable-pipe/observable-pipe.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { GithubFollowersComponent } from './github-followers/github-followers.co
     InputComponentComponent,
     StudentComponent,
     PostsComponent,
-    GithubFollowersComponent
+    GithubFollowersComponent,
+    ObservablePipeComponent
   ],
   imports: [
     BrowserModule,
