@@ -11,7 +11,7 @@ import { BadInput } from './../common/bad-input-error';
   providedIn: 'root'
 })
 export class PostService {
-  private url: string = 'https://jsonplaceholder.typicode.com/posts';
+  private url: string = 'https://abcdefjsonplaceholder.typicode.com/posts';
 
   constructor(private http: HttpClient) { }
 

@@ -25,9 +25,6 @@ export class PostsComponent implements OnInit {
       .subscribe(
         (response) => {
           this.posts = response;
-        },
-        (error) => {
-          alert('An unexpected error have occured');
         }
       )
   }
@@ -47,9 +44,7 @@ export class PostsComponent implements OnInit {
           if (error instanceof BadInput) {
             alert('Bad Request Error')
           }
-          else {
-            alert('An unexpected error have occured');
-          }
+          else throw error;
         }
 
       )
@@ -62,9 +57,6 @@ export class PostsComponent implements OnInit {
       .subscribe(
         (response) => {
           console.log(response)
-        },
-        (error) => {
-          alert('An unexpected error have occured');
         }
       )
   }
@@ -81,10 +73,8 @@ export class PostsComponent implements OnInit {
           if (error instanceof NotFoundError) {
             alert('This post is already deleted')
           }
-          else {
-            alert('An unexpected error have occured');
+          else throw error;
 
-          }
         }
       )
   }

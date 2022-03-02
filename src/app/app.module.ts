@@ -28,6 +28,8 @@ import { StudentComponent } from './student/student.component';
 import { PostsComponent } from './posts/posts.component';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
 import { ObservablePipeComponent } from './observable-pipe/observable-pipe.component';
+import { AppErrorHandler } from './common/app-error-handler';
+import { ErrorHandler } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -56,12 +58,17 @@ import { ObservablePipeComponent } from './observable-pipe/observable-pipe.compo
     ObservablePipeComponent
   ],
   imports: [
+
+
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],
-  providers: [CourseService],
+  providers: [
+    CourseService,
+    { provide: ErrorHandler, useClass: AppErrorHandler }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
