@@ -3,6 +3,7 @@ import { PostService } from './../services/post.service';
 import { Post } from './post.model';
 import { AppError } from './../common/app-error';
 import { NotFoundError } from './../common/not-found-error';
+import { BadInput } from './../common/bad-input-error';
 
 
 
@@ -42,8 +43,13 @@ export class PostsComponent implements OnInit {
           console.log(post)
           this.posts.splice(0, 0, post)
         },
-        (error) => {
-          alert('An unexpected error have occured');
+        (error: AppError) => {
+          if (error instanceof BadInput) {
+            alert('Bad Request Error')
+          }
+          else {
+            alert('An unexpected error have occured');
+          }
         }
 
       )

@@ -5,6 +5,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { AppError } from './../common/app-error';
 import { NotFoundError } from './../common/not-found-error';
+import { BadInput } from './../common/bad-input-error';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,16 @@ export class PostService {
   createPost(post: Post) {
     return this.http
       .post<{ title?: string, id?: number }>(this.url, JSON.stringify(post))
+      .pipe(
+        catchError((error: Response) => {
+          if (error.status === 400) {
+            return throwError(new BadInput());
+          }
+          else {
+            return throwError(new AppError(error))
+          }
+        })
+      )
 
   }
 
