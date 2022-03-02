@@ -30,6 +30,7 @@ import { GithubFollowersComponent } from './github-followers/github-followers.co
 import { ObservablePipeComponent } from './observable-pipe/observable-pipe.component';
 import { AppErrorHandler } from './common/app-error-handler';
 import { ErrorHandler } from '@angular/core';
+import { GithubFollowerEnhancedComponent } from './github-follower-enhanced/github-follower-enhanced.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ErrorHandler } from '@angular/core';
     StudentComponent,
     PostsComponent,
     GithubFollowersComponent,
-    ObservablePipeComponent
+    ObservablePipeComponent,
+    GithubFollowerEnhancedComponent
   ],
   imports: [
 
