@@ -16,43 +16,50 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getPosts() {
-    return this.http.get(this.url);
+    return this.http.get(this.url)
+      .pipe(
+        catchError(this.handleError)
+      )
   }
 
   createPost(post: Post) {
     return this.http
       .post<{ title?: string, id?: number }>(this.url, JSON.stringify(post))
       .pipe(
-        catchError((error: Response) => {
-          if (error.status === 400) {
-            return throwError(new BadInput());
-          }
-          else {
-            return throwError(new AppError(error))
-          }
-        })
+        catchError(this.handleError)
+
       )
 
   }
 
   updatePost(post: Post) {
-    return this.http.put(this.url + '/' + post.id, post);
+    return this.http.put(this.url + '/' + post.id, post)
+      .pipe(
+        catchError(this.handleError)
+      )
   }
 
   deletePost(id: number) {
     return this.http.delete(this.url + '/zartab/ABC' + 21547)
       .pipe(
-        catchError((error: Response) => {
-          console.log('Error Management Happening Here..', error);
-          if (error.status === 404) {
-            return throwError(new NotFoundError())
-          }
-          else {
-            return throwError(new AppError(error))
-          }
-        }
-        )
+        catchError(this.handleError)
       )
+  }
+
+  private handleError(error: Response) {
+    console.log('Error management is happeneing here.....')
+    if (error.status === 404) {
+      return throwError(new NotFoundError())
+    }
+
+    if (error.status === 400) {
+      return throwError(new BadInput());
+    }
+
+    else {
+      return throwError(new AppError(error))
+    }
+
   }
 
 
