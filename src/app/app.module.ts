@@ -26,6 +26,7 @@ import { InputFormatDirective } from './input-format.directive';
 import { InputComponentComponent } from './input-component/input-component.component';
 import { StudentComponent } from './student/student.component';
 import { PostsComponent } from './posts/posts.component';
+import { GithubFollowersComponent } from './github-followers/github-followers.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { PostsComponent } from './posts/posts.component';
     InputFormatDirective,
     InputComponentComponent,
     StudentComponent,
-    PostsComponent
+    PostsComponent,
+    GithubFollowersComponent
   ],
   imports: [
     BrowserModule,
