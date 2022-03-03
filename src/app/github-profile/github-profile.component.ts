@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { combineLatest } from 'rxjs';
+
 
 @Component({
   selector: 'app-github-profile',
@@ -12,7 +13,7 @@ export class GithubProfileComponent implements OnInit {
   id: string = 'No ID Yet'
   repos: string = '0';
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     console.log("Github Profile On Init")
@@ -33,7 +34,8 @@ export class GithubProfileComponent implements OnInit {
     //     }
     //   )
 
-    combineLatest([this.route.queryParamMap, this.route.paramMap])
+    combineLatest([this.route.queryParamMap,
+    this.route.paramMap])
       .subscribe(
         (combined) => {
 
@@ -45,6 +47,10 @@ export class GithubProfileComponent implements OnInit {
         }
       )
 
+  }
+
+  goBack() {
+    this.router.navigate(['/followers'])
   }
 
 }

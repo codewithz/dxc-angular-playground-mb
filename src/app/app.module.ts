@@ -36,6 +36,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { GithubProfileComponent } from './github-profile/github-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +66,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NavbarComponent,
     HomeComponentComponent,
     GithubProfileComponent,
-    NotFoundComponent
+    NotFoundComponent,
+
   ],
   imports: [
 
