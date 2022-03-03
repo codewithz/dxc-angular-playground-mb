@@ -5,7 +5,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PostsComponent } from './posts/posts.component';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
 import { GithubProfileComponent } from './github-profile/github-profile.component';
-
+import { ArchiveHomeComponent } from './archive-home/archive-home.component';
+import { ArciveComponent } from './arcive/arcive.component';
 const routes: Routes = [
   {
     path: '',
@@ -19,6 +20,14 @@ const routes: Routes = [
   {
     path: 'followers',
     component: GithubFollowersComponent
+  },
+  {
+    path: 'archive-home',
+    component: ArchiveHomeComponent
+  },
+  {
+    path: 'archive/:year/:month',
+    component: ArciveComponent
   },
   {
     path: 'posts',

@@ -35,6 +35,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { GithubProfileComponent } from './github-profile/github-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ArchiveHomeComponent } from './archive-home/archive-home.component';
+import { ArciveComponent } from './arcive/arcive.component';
 
 
 @NgModule({
@@ -67,6 +69,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HomeComponentComponent,
     GithubProfileComponent,
     NotFoundComponent,
+    ArchiveHomeComponent,
+    ArciveComponent,
 
   ],
   imports: [
