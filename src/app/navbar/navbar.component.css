@@ -8,3 +8,8 @@
 .text-color {
   color: white;
 }
+
+.active-current {
+  background-color: white;
+  color: purple;
+}
