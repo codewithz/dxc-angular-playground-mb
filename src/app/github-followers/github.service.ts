@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GithubService {
 
-  private url: string = 'https://api.github1.com/users/codewithz/followers';
+  private url: string = 'https://api.github.com/users/codewithz/followers';
 
   constructor(private http: HttpClient) { }
 
