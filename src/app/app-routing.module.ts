@@ -12,6 +12,11 @@ const routes: Routes = [
     component: HomeComponentComponent
   },
   {
+    path: 'followers/:user',
+    component: GithubProfileComponent
+
+  },
+  {
     path: 'followers',
     component: GithubFollowersComponent
   },
